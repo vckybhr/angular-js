@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 
 /build/
 /benchpress-build/
 .DS_Store
 /*.DS_Store
+=======
+/build/
+/benchpress-build/
+.DS_Store
+>>>>>>> master
 gen_docs.disable
 test.disable
 regression/temp*.html
@@ -24,4 +30,8 @@ npm-debug.log
 /scripts/bower/bower-*
 .vscode
 *.log
+<<<<<<< HEAD
 *.stackdump
+=======
+*.stackdump
+>>>>>>> master

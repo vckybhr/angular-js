@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {},
+
   "private": true,
   "dependencies": {
     "express": "^4.14.0"
   },
-  "author": "Vikas",
-  "license": "ISC"
+
+  "author": "vckybhr",
+  "license": "ISC",
   
+
+  "author": "",
+  "license": "ISC",
+  "scripts": {}
 }
+
