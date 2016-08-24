@@ -3,28 +3,28 @@ var app = angular.module('app',['ngRoute']);
 app.config(function($routeProvider){
 	$routeProvider.
 		when('/',{
-			templateUrl: 'html/home.html',
+			templateUrl: 'home.html',
 			controller:  'homeCtrl'
 
 			}).
 		when('/competition',{
-			templateUrl: 'html/competition.html',
+			templateUrl: 'competition.html',
 			controller:  'competitionCtrl'
 			}).
 		when('/fixtures',{
-			templateUrl: 'html/fixture.html',
+			templateUrl: 'fixture.html',
 			controller:  'fixtureCtrl'
 			}).
 		when('/teams',{
-			templateUrl: 'html/teams.html',
+			templateUrl: 'teams.html',
 			controller:  'teamCtrl'
 			}).
 		when('/teams/:key/:teamkey/players',{
-			templateUrl: 'html/teamPlayers.html',
+			templateUrl: 'teamPlayers.html',
 			controller:  'teamPlayerCtrl'
 			}).
 		when('/:id/Competeams',{
-			templateUrl: 'html/competitionTeam.html',
+			templateUrl: 'competitionTeam.html',
 			controller:  'competitionTeamCtrl'
 			}).
 		otherwise({
@@ -93,7 +93,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 		// 	$scope.barca = true;
 		// }
 		// for defence
-		if (key==84 || key==70 || key==64 || key==86 || key==72 || key==65) {
+		if (key===84 || key===70 || key===64 || key===86 || key===72 || key===65) {
 			$scope.defence2 = true;
 			$scope.defence1 = false;
 		}
