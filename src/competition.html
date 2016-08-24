@@ -1,0 +1,27 @@
+	<table>
+    <caption><h1>Football Competitions</h1></caption>
+      <tr>
+      	<th>Year</th>
+        <th>Caption</th>
+        <th>League</th>
+        <th>Current Match Day</th>
+        <th>No. of Teams</th>
+        <th>No. of Games</th>
+        <th>Last Updated</th>
+      </tr>
+    
+      <tr ng-repeat='data in posts'>
+        <td>{{data.year}}</td>
+        <td><a href= "#/{{data.id}}/Competeams"> {{data.caption}} </a> </td>
+        <td>{{ data.currentMatchday}}</td>
+        <td>{{ data.numberOfTeams}}</td>
+        <td>{{ data.numberOfGames}}</td>
+        <td>{{ data.lastUpdated }}</td>
+
+      </tr>
+    </table>
+ 
+
+
+
+

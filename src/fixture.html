@@ -1,0 +1,5 @@
+<h1>page for fixtures</h1>
+       <div ng-repeat='data in posts.fixtures'>
+       <br>{{data.date}}</br>
+        <a href="#/competition"> {{data.awayTeamName}} {{"|"}} {{data.result.goalsAwayTeam}} {{"-"}} {{data.result.goalsHomeTeam}} {{"|"}} {{data.homeTeamName}} </a> 
+      </div>

@@ -1,0 +1,22 @@
+<h1> {{teamName}} </h1>
+<div ng-repeat="data in posts">
+	<li>{{data.name}}</li>
+	<table>
+		<tr>
+			<th>DOB</th>
+			<th>Contract Until</th>
+			<th>jersey Number</th>
+			<th>Nationlity</th>
+			<th>Position</th>
+		</tr>
+		<tr>
+		<td>  {{data.dateOfBirth}}  </td>
+		<td> {{data.contractUntil}} </td>
+		<td> {{data.jerseyNumber}}	</td>
+		<td> {{data.nationality}} 	</td>
+		<td> {{data.position}} 		</td>
+		</tr>
+</div>
+
+
+
