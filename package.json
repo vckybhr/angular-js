@@ -1,0 +1,13 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "private": true,
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {}
+}
