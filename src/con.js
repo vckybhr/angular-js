@@ -37,24 +37,10 @@ app.controller('homeCtrl', function($scope){
 	
 });
 
-app.controller('teamCtrl', function($scope){
-	$scope.data = [
-    {"name" : "Barcelona", "key" : "81"},
-    {"name" : "Chelsea FC", "key" : "61"},
-    {"name" : "Everton FC", "key" : "62"},
-    {"name" : "Liverpool FC", "key" : "64"},
-    {"name" : "Manchester City FC", "key" : "65"},
-    {"name" : "Manchester United FC", "key" : "66"},
-    {"name" : "Newcastle United FC", "key" : "67"},
-    {"name" : "Norwich City FC", "key" : "68"},
-    {"name" : "Stoke City FC", "key" : "70"},
-    {"name" : "Swansea City FC", "key" : "72"},
-    {"name" : "Tottenham Hotspur FC", "key" : "73"},
-    {"name" : "Athletic Club", "key" : "77"},
-    {"name" : "Atletico de Madrid", "key" : "78"},
-    {"name" : "Malaga CF", "key" : "84"},
-    {"name" : "Real Madrid CF", "key" : "86"}];
-});
+app.controller('teamCtrl',['$scope', 'footballConstant', function($scope,footballConstant){
+	$scope.data = footballConstant.teamData;
+	console.log($scope.data);
+}]);
 app.controller('competitionCtrl',['$scope','$http','teamFactory', function($scope, $http, teamFactory){
 	url = 'http://api.football-data.org/v1/competitions';
 	teamFactory.data(url,function(data, status){
