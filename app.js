@@ -16,6 +16,7 @@ app.get('/fixtures', function(req, res){
 	var token = req.headers['X-Auth-Token'];
 	console.log('token');
 	//function to get the data from http://api.football-data.org/v1/fixtures
+	res.send("abs");
 });
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
