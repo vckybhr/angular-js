@@ -174,30 +174,30 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 	
 }]);
 
-app.factory('teamFactory', ['$http' ,
-	function($http){
-	var teamFactory={
-		data:function httpRequestHandler(url,callback)
-			{
-						$http({url: url,
-						  	method: 'GET',
-						  	headers: {
-							  	'X-Auth-Token': '908cabfd72b547d191cb43364ce55f85'
-								},
-							timeout:5000
-						}).success(function(data,status){
-							callback(data,status);
+// app.factory('teamFactory', ['$http' ,
+// 	function($http){
+// 	var teamFactory={
+// 		data:function httpRequestHandler(url,callback)
+// 			{
+// 						$http({url: url,
+// 						  	method: 'GET',
+// 						  	headers: {
+// 							  	'X-Auth-Token': '908cabfd72b547d191cb43364ce55f85'
+// 								},
+// 							timeout:5000
+// 						}).success(function(data,status){
+// 							callback(data,status);
 
-							})
-						  .error(function (err,status){
-						  	callback(err,status);
-							});
+// 							})
+// 						  .error(function (err,status){
+// 						  	callback(err,status);
+// 							});
 
-			}
-    }
+// 			}
+//     }
 	
-	return teamFactory;
-}]);
+// 	return teamFactory;
+// }]);
 // app.service('team1Service',['$http',function($http){
 // 	this.users = ['John', 'James', 'Jake'];
 // 	this.showMe =function(){

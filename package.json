@@ -3,18 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-
   "private": true,
   "dependencies": {
+    "ejs": "^2.5.1",
     "express": "^4.14.0"
   },
-
-  "author": "vckybhr",
-  "license": "ISC",
-  
-
   "author": "",
   "license": "ISC",
-  "scripts": {}
+  "scripts": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vckybhr/angular-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vckybhr/angular-js/issues"
+  },
+  "homepage": "https://github.com/vckybhr/angular-js#readme"
 }
-
