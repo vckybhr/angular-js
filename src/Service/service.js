@@ -1,6 +1,6 @@
 app.service('getDataService', ['$http', function($http){
     this.get = function(url, callback){
-                    $http({url: '/fixtures',
+                    $http({url: url,
                          method: 'GET',
                          headers: {
                             'X-Auth-Token': x

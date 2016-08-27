@@ -1,23 +1,9 @@
-
 <h1>Competition Teams</h1>
-<table>
-   
-      <tr>
-          <th>Team Logo</th>
-          <th>code</th>
-          <th>Team Name</th>
-          <th>MarketValue</th>
-        
-      </tr>
-    
-      <tr ng-repeat='data in posts'>
-        <td><img ng-src= "{{data.crestUrl}}" width= “15” height="15"></img></td>
-        <td>{{data.code}}</td>
-        <td><a href= "#/{{data._links.players}}/teams}}"> {{data.name}} </a> </td>
-        
-        <td>{{ data.squadMarketValue | filter:currency }}</td>
-
-      </tr>
-    </table>
-
-   
+  <div class="competitionTeamPage" ng-repeat='data in posts'>
+  <div class="competitionTeam">
+    <img src="{{data.crestUrl}}" height="150" width="150">
+  </div>
+  <h2>Team Name: {{data.name}}</h2>
+  <br>Team Code:{{data.code}}</br>
+  <br ng-show='flag'>MarketValue : <b>{{ data.squadMarketValue | filter:currency }}</b></br>
+</div>

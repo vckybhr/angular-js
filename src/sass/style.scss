@@ -1,0 +1,401 @@
+html, body { margin: 0px; padding: 0px; border: 0px; color: #000; background: #fff; } html, body, p, th, td, li, dd, dt { font: 1em Arial, Helvetica, sans-serif; } h1, h2, h3, h4, h5, h6 { font-family: Arial, Helvetica, sans-serif; } h1 { font-size: 2em; } h2 { font-size: 1.5em; } h3 { font-size: 1.2em ; } h4 { font-size: 1.0em; } h5 { font-size: 0.9em; } h6 { font-size: 0.8em; } a:link { color: #00f; } a:visited { color: #009; } a:hover { color: #06f; } a:active { color: #0cf; }
+  
+  .header {
+  width: 100%;
+  display: inline-block;
+  -webkit-box-shadow: 0 0 70px #fff;
+  -moz-box-shadow: 0 0 70px #fff;
+  box-shadow: 0 0 70px #fff;
+  margin-top: 0px;
+  margin: 0px 0px 0px 0px;
+  top: 0px ;
+    }
+    
+  .headerLinks a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+
+  ul.headerLinks {
+    margin-top: 0px;
+    margin-left: 0px;
+    list-style: none;
+    position: relative;
+    text-align: left;
+  }
+  ul.headerLinks li {
+    float: left;
+  }
+
+  /* clear'n floats */
+  ul.headerLinks:after {
+    clear: both;
+  }
+  ul.headerLinks:before,
+  ul.headerLinks:after {
+      content: " ";
+      display: table;
+  }
+
+  nav {
+    position: relative;
+    background: #2B2B2B;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #0E0E0E;
+    -webkit-box-shadow: 2px 2px 3px #888;
+    -moz-box-shadow: 2px 2px 3px #888;
+    box-shadow: 2px 2px 3px #888;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  ul.headerLinks li a {
+    display: block;
+    padding: 20px 30px;
+    border-right: 1px solid #3D3D3D;
+  }
+  ul.headerLinks li:last-child a {
+    border-right: none;
+  }
+  ul.headerLinks li:hover a {
+    background: #fff;
+    color: #666;
+    text-shadow: none;
+  }
+  
+  // competitionPage
+
+#competitionPage {
+  position : relative;
+  margin: 100px auto;
+  text-align: center;
+  width: 892px; /* total computed width = 222 x 3 + 226 */
+  display:inline;}
+
+#competitionPage .competition {
+  font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+  text-shadow: 0 1px rgba(255,255,255,.8);        
+  background: #fff;      
+  border: 1px solid #ddd;
+  color: #333;
+  margin-left: 20px;
+  margin-top: 20px;
+  display:inline;
+  padding: 20px;
+  width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */      
+  float: left;
+  position: relative;
+}
+.competition a {
+ color: black;
+}
+.competition a:hover {
+ color: #167ac6;
+}
+#competitionPage h3 {
+  height:100px;
+  font-size: 25px;
+  font-weight: normal;
+  padding: 20px;
+  margin: -20px -20px 50px -20px;
+  background-color: #59b300;
+  font-style: italic;
+  color:white;
+  
+}
+
+#competitionPage ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#competitionPage li {
+  font-size: 15px;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+.competitionTeamPage {
+  width: 300px;
+  margin: 0px auto;
+  margin-left: 60px;
+  margin-top: 50px;
+
+  background-color: #E0E0E0;
+  padding: 0 20px 20px 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+  display: inline-block;
+
+}
+.competitionTeam {
+  border-radius: 100px;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: auto;
+  top: -20px;
+  left:-160px;
+  box-shadow: 0 0 0 13px #f0f0f0;
+  -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+  -moz-box-shadow: 0 0 0 13px #f0f0f0;
+}
+.competitionTeam img {
+  position: absolute;
+  left: -26px;
+  top: -25px ;
+  background-color: #E0E0E0;
+}
+.competitionTeam h2 {
+  font-size: 25px;
+  font-weight: 600px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.fixturePage{
+    background-color: grey;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    /*background-image: url("http://cdn.wallpapersafari.com/32/60/YltRok.jpg");*/
+    background-attachment: fixed;
+}
+.fixture:nth-child(even) {
+    background: #D0D0D0;
+}
+.fixture:nth-child(odd) {
+    background: #F0F8FF;
+}
+.fixture{
+    
+    color:black;
+    margin: 0px auto;
+    width:70%;
+}
+.fixturedate{
+    background-color:green ;
+    color:white;
+    margin-top: 20px;
+}
+// Team player page
+
+div.ground {
+left: 27%;
+position:relative;
+background-color: green;
+color:black;
+height:500px;
+width:570px;
+border: 5px solid #000;
+}
+div.goal1 {
+border-style: solid;
+border-color: white;
+width:100px;
+margin-left: 245px;
+height:30px;
+}
+div.goal2 {
+position:absolute;
+border-style: solid;
+border-color: white;
+width:100px;
+margin-left: 245px;
+height:30px;
+bottom:0px;
+}
+div.middleLine {
+position:absolute;
+background-color: white;
+ width:100%;
+ height:3px;
+margin-top:215px;
+}
+
+.player {
+    position:absolute;
+    margin-left:35px;
+    margin-bottom:10px;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 30px;
+    height: 20px;
+    background: #ccc;
+    border: 1px solid #000;
+}
+.goalkeeperText { 
+    display: none;
+}
+.innerText { 
+    display: none;
+}
+
+.player:hover .goalkeeperText {
+    display: inline-block;
+    background-color:white;
+   
+}
+.player:hover .innerText {
+    display: inline-block;
+    background-color:white;
+  
+}
+.position1
+{
+  position:absolute;
+  top: 420px;
+  left: 340px;
+}
+.position2
+{
+  position:absolute;
+  top:420px;
+  left: 150px;
+}
+.position3
+{
+  position:absolute;
+  top:380px;
+  margin-left: 500px;
+}
+.position4
+{
+  position:absolute;
+  top:380px;
+  left: 0px;
+}
+.position5
+{
+  position:absolute;
+  top:238px;
+  left: 0px;
+}
+.position6
+{
+  position:absolute;
+  top:238px;
+  left: 235px;
+}
+.position7
+{
+  position:absolute;
+  top:238px;
+  margin-left: 500px;
+}
+.position8
+{
+  position:absolute;
+  top:130px;
+  left: 0px;
+}
+.position9
+{
+  position:absolute;
+  top:130px;
+  margin-left: 500px;
+}
+.position10
+{
+  position:absolute;
+  top:100px;
+  left: 235px;
+}
+.position11
+{
+  position:absolute;
+  top:390px;
+  left: 237px;
+}
+.position12
+{
+  position:absolute;
+  top:190px;
+  left: 320px;
+}
+.position13
+{
+  position:absolute;
+  top:190px;
+  left: 150px;
+}
+.position14
+{
+  position:absolute;
+  top:110px;
+  left: 150px;
+}
+.position15
+{
+  position:absolute;
+  top:110px;
+  left: 320px;
+}
+.position16
+{
+  position:absolute;
+  top:300px;
+  left: 235px;
+}
+.position17
+{
+  position:absolute;
+  top:180px;
+  left: 235px;
+}
+.position18
+{
+  position:absolute;
+  top:290px;
+  left: 320px;
+}
+.position19
+{
+  position:absolute;
+  top:290px;
+  left: 150px;
+}
+
+h2, h4{
+ margin-bottom: 2px;}
+.teamPlayer h4 { 
+  margin-top: 0;
+  font-weight: 300;
+  color: rgb(0,160,209);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 1.0em;
+}
+.teamPlayerPage {
+  vertical-align:top;
+  position: relative;
+  display: inline-block;
+  /*margin-top: 30px;*/
+    margin : 20px auto;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    height: 240px;
+    width: 29%;
+    box-shadow: 1px 1px 20px 2px rgba(0,0,0,.3);
+}
+
+.teamPlayer{
+  width: 65%;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+br{
+  margin: 10px 0;
+}
+  p { 
+    position:relative;font-size: 0.9em; }

@@ -1,24 +1,17 @@
-	<table>
-    <caption><h1>Football Competitions</h1></caption>
-      <tr>
-      	<th>Year</th>
-        <th>Caption</th>
-        <th>Current Match Day</th>
-        <th>No. of Teams</th>
-        <th>No. of Games</th>
-        <th>Last Updated</th>
-      </tr>
-    
-      <tr ng-repeat='data in posts'>
-        <td>{{data.year}}</td>
-        <td><a href= "#/{{data.id}}/Competeams"> {{data.caption}} </a> </td>
-        <td>{{ data.currentMatchday}}</td>
-        <td>{{ data.numberOfTeams}}</td>
-        <td>{{ data.numberOfGames}}</td>
-        <td>{{ data.lastUpdated }}</td>
-
-      </tr>
-    </table>
+<div ng-repeat= 'data in posts'>
+  <div id="competitionPage" >
+    <div class="competition">
+        <h3 class="caption">{{data.caption}} </h3>
+        <a href= "#/{{data.id}}/Competeams" ><h1>Teams</h1></a>         
+        <ul>
+            <li> Current Match Day:<b>{{data.currentMatchday}}</b></li>
+            <li> No. of Teams:<b>{{ data.numberOfTeams}}</b></li>
+            <li> No. of Games:<b>{{ data.numberOfGames}}</b></li>
+            <li> Last Updated:<b>{{ data.lastUpdated }}</b></li>     
+        </ul> 
+    </div> 
+</div>
+</div>
  
 
 

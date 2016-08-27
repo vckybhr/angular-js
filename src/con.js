@@ -36,7 +36,6 @@ app.config(function($routeProvider){
 app.controller('homeCtrl', function($scope){
 	
 });
-
 app.controller('teamCtrl',['$scope', 'footballConstant', function($scope,footballConstant){
 	$scope.data = footballConstant.teamData;
 	console.log($scope.data);
@@ -79,7 +78,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 		// 	$scope.barca = true;
 		// }
 		// for defence
-		if (key===84 || key===70 || key===64 || key===86 || key===72 || key===65) {
+		if (key==="84" || key==="70" || key==="64" || key==="86" || key==="72" || key==="65") {
 			$scope.defence2 = true;
 			$scope.defence1 = false;
 		}
@@ -88,7 +87,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.defence1 = true;
 		}
 		// for mid 
-		if (key == 81 || key == 66 || key == 73){
+		if (key === "81" || key === "66" || key === "73"){
 			$scope.mid_six = true;
 			$scope.mid_twelve = false;
 			$scope.mid_thirteen = false;
@@ -97,7 +96,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.mid_sixteen = false;
 			$scope.mid_seventeen = false;
 		}
-		else if(key == 77 || key == 67 || key == 61){
+		else if(key === "77" || key === "67" || key === "61"){
 			$scope.mid_six = false;
 			$scope.mid_twelve = true;
 			$scope.mid_thirteen = true;
@@ -106,7 +105,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.mid_eighteen = false;
 			$scope.mid_nineteen= false;
 		}
-		else if(key == 78 || key == 68 || key == 62){
+		else if(key === "78" || key === "68" || key === "62"){
 			$scope.mid_six = false;
 			$scope.mid_twelve = false;
 			$scope.mid_thirteen = false;
@@ -115,7 +114,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.mid_eighteen = true;
 			$scope.mid_nineteen= true;
 		}
-		else if(key == 84 || key == 70 || key == 64){
+		else if(key === "84" || key === "70" || key === "64"){
 			$scope.mid_six = false;
 			$scope.mid_twelve = false;
 			$scope.mid_thirteen = false;
@@ -124,7 +123,7 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.mid_eighteen = false;
 			$scope.mid_nineteen= false;
 		}
-		else if(key == 86 || key == 72 || key == 65){
+		else if(key === "86" || key === "72" || key === "65"){
 			$scope.mid_six = true;
 			$scope.mid_twelve = true;
 			$scope.mid_thirteen = true;
@@ -134,21 +133,21 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.mid_nineteen= false;
 		}
 		// for attack
-		if (key == 81 || key == 66 || key == 73 || key == 84 || key == 70 || key == 64){
+		if (key === "81" || key === "66" || key === "73" || key === "84" || key === "70" || key === "64"){
 			$scope.attack_eight = true;
 			$scope.attack_nine = true;
 			$scope.attack_ten = true;
 			$scope.attack_fourteen = false;
 			$scope.attack_fifteen= false;
 		}
-		else if(key == 77 || key == 67 || key == 61 || key == 78 || key == 68 || key == 62){
+		else if(key === "77" || key === "67" || key === "61" || key === "78" || key === "68" || key === "62"){
 			$scope.attack_eight = false;
 			$scope.attack_nine = false;
 			$scope.attack_ten = true;
 			$scope.attack_fourteen = false;
 			$scope.attack_fifteen= false;
 		}
-		else if(key == 86 || key == 72 || key == 65){
+		else if(key === "86" || key === "72" || key === "65"){
 			$scope.attack_eight = false;
 			$scope.attack_nine = false;
 			$scope.attack_ten = false;
@@ -161,35 +160,9 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 }]);
 
 
-// app.service('team1Service',['$http',function($http){
-// 	this.users = ['John', 'James', 'Jake'];
-// 	this.showMe =function(){
-// 		console.log("Shown service called");
-// 	};
-// 	var response={
-// 		show:this.users
-// 	};
-// 	return response;
-	// function httpRequestHandler(url,callback)
-	// {
-	// 					$http({url: url,
-	// 					  	method: 'GET',
-	// 					  	headers: {
- //   						  	'X-Auth-Token': '908cabfd72b547d191cb43364ce55f85'
- // 							},
-	// 						timeout:5000
-	// 					}).success(function(data,status){
-	// 						callback(data,status);
-
-	// 						})
-	// 					  .error(function (err,status){
-	// 					  	callback(err,status);
-	// 						});
-
-	// }
 
 
-// }]);
+
 
 
 

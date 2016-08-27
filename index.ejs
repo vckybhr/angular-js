@@ -6,16 +6,32 @@
   <script type="text/javascript" src="Factory/factory.js"></script>
   <script type="text/javascript" src="Service/service.js"></script>
   <script type="text/javascript" src="constant/constant.js"></script>
-
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- <script src="service.js"></script> -->
 <!--   <script src="./src/factory.js"></script> -->
 
 </head>
 <body>
-    <div class="header">football</div>
-    <div ng-view></div>
-
+    <div class="header">
+<nav>
+  <ul class="headerLinks">
+    <li>
+      <a href="#/">Home</a>
+    </li>
+    <li>
+      <a href="#/competition"> Competitions </a>
+    </li>
+    <li>
+      <a href="#/fixtures"> Fixtures </a>
+    </li>
+    <li>
+          <a href="#/teams" > Teams </a>
+      </li>
+  </ul>
+</nav>
+</div>
+<div ng-view></div>
 </body>
     <script type="text/javascript">
     	var x = "<%= token %>"

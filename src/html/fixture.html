@@ -1,5 +1,13 @@
-<h1>page for fixtures</h1>
-       <div ng-repeat='data in posts.fixtures'>
-       <br>{{data.date}}</br>
-        <a href="#/competition"> {{data.awayTeamName}} {{"|"}} {{data.result.goalsAwayTeam}} {{"-"}} {{data.result.goalsHomeTeam}} {{"|"}} {{data.homeTeamName}} </a> 
-      </div>
+<div class="fixturePage">
+    <h1>page for fixtures</h1>
+    <h1> ( From {{posts.timeFrameStart}} to {{posts.timeFrameEnd}} )</h1>
+        <div class="fixture" ng-repeat='data in posts.fixtures'>
+            <div class="fixturedate" >
+                <br><b>{{data.date }}</b></br>
+            </div>
+            <br> <b>{{data.awayTeamName}}</b>  v   <b>{{data.homeTeamName}}</b> 
+            </br>
+            <br><b>Odds</b> </br><br>awayWin: {{data.odds.awayWin}} Draw:{{data.odds.draw}} HomeWin: {{data.odds.homeWin}} </br>
+            <br>Result: {{data.result.goalsAwayTeam}} {{"-"}} {{data.result.goalsHomeTeam}}</br>
+        </div>
+</div>
