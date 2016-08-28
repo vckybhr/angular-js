@@ -15,10 +15,10 @@ app.config(function($routeProvider){
 			templateUrl: 'html/fixture.html',
 			controller:  'fixtureCtrl'
 			}).
-		when('/teams',{
-			templateUrl: 'html/teams.html',
-			controller:  'teamCtrl'
-			}).
+		// when('/teams',{
+		// 	templateUrl: 'html/teams.html',
+		// 	controller:  'teamCtrl'
+		// 	}).
 		when('/teams/:key/:teamkey/players',{
 			templateUrl: 'html/teamPlayers.html',
 			controller:  'teamPlayerCtrl'

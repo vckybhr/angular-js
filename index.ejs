@@ -13,27 +13,38 @@
 
 </head>
 <body>
-    <div class="header">
-<nav>
-  <ul class="headerLinks">
-    <li>
-      <a href="#/">Home</a>
-    </li>
-    <li>
-      <a href="#/competition"> Competitions </a>
-    </li>
-    <li>
-      <a href="#/fixtures"> Fixtures </a>
-    </li>
-    <li>
-          <a href="#/teams" > Teams </a>
-      </li>
-  </ul>
-</nav>
-</div>
-<div ng-view></div>
+  <div class="header">
+    <nav>
+      <ul class="headerLinks">
+        <li>
+          <a href="#/">Home</a>
+        </li>
+        <li>
+          <a href="#/competition"> Competitions </a>
+        </li>
+        <li>
+          <a href="#/fixtures"> Fixtures </a>
+        </li>
+        <li>
+          <div class="dropdown" ng-controller='teamCtrl'>
+            <div class="dropdown">
+              <a class="dropbtn" > Teams </a>
+              <div class="dropdown-content" >
+                <select onchange="location = this.value;" size=15  >
+                  <option ng-repeat="team in data" value="#/teams/{{team.key}}/{{team.name}}/players">
+                    {{team.name}}
+                  </option>
+                </select>
+              </div>
+            </div>
+          <div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div ng-view></div>
 </body>
-    <script type="text/javascript">
-    	var x = "<%= token %>"
-    </script>
+  <script type="text/javascript">
+    var x = "<%= token %>"
+  </script>
 </html>
