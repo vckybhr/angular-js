@@ -42,14 +42,14 @@ app.controller('teamCtrl',['$scope', 'footballConstant', function($scope,footbal
 	console.log($scope.data);
 }]);
 app.controller('competitionCtrl',['$scope','$http','teamFactory', function($scope, $http, teamFactory){
-	url = 'http://api.football-data.org/v1/competitions';
+	var url = 'http://api.football-data.org/v1/competitions';
 	teamFactory.data(url,function(data, status){
 		$scope.posts = data ;
 		console.log(data);   // remove  this console		
 	});
 }]);
 app.controller('fixtureCtrl',['$scope','$http','teamFactory', function($scope, $http, teamFactory){
-	url = 'http://api.football-data.org/v1/fixtures'
+	var url = 'http://api.football-data.org/v1/fixtures'
 	teamFactory.data(url,function(data, status){
 		$scope.posts = data ;
 		console.log(data);   // remove  this console		
@@ -58,7 +58,7 @@ app.controller('fixtureCtrl',['$scope','$http','teamFactory', function($scope, $
 app.controller('competitionTeamCtrl',['$scope', '$http', '$routeParams','teamFactory', function($scope, $http, $routeParams,teamFactory){
 	var param = $routeParams.id;
 	console.log(param); 
-	url = 'http://api.football-data.org/v1/competitions/' +param  + '/teams'
+	var url = 'http://api.football-data.org/v1/competitions/' +param  + '/teams'
 	teamFactory.data(url,function(data, status){
 		$scope.posts = data.teams;
 		console.log(data);
@@ -67,7 +67,7 @@ app.controller('competitionTeamCtrl',['$scope', '$http', '$routeParams','teamFac
 app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', function($scope,$http,$routeParams,teamFactory){
 	var key= $routeParams.key;
 	$scope.teamName = $routeParams.teamkey;
-	url = 'http://api.football-data.org/v1/teams/' + key +'/players' ;
+	var url = 'http://api.football-data.org/v1/teams/' + key +'/players' ;
 	teamFactory.data(url,function(data, status){
 		$scope.posts = data.players;
 		console.log(data);
