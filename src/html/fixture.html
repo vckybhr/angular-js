@@ -1,12 +1,15 @@
 <div class="fixturePage">
-    <h1> ( From {{posts.timeFrameStart}} to {{posts.timeFrameEnd}} )</h1>
+    <!-- <h1> ( From {{posts.timeFrameStart}} to {{posts.timeFrameEnd}} )</h1> -->
         <div class="fixture" ng-repeat='data in posts.fixtures'>
             <div class="fixturedate" >
-                <br><b>{{data.date }}</b></br>
+                <!-- <br><b>{{data.date | date:'yyyy-MM-dd HH:mm:ss Z'}}</b></br> -->
+                <br>{{data.date | date:'hh:mm a, MMMM dd yyyy (EEEE)'}}</br>
             </div>
-            <br> <b>{{data.awayTeamName}}</b>  v   <b>{{data.homeTeamName}}</b> 
+            <div class="fixtureTeam"><br> <span><b>{{data.awayTeamName}}</b> </span>v <b><span>{{data.homeTeamName}}</span></b> 
             </br>
-            <br><b>Odds</b> </br><br>awayWin: {{data.odds.awayWin}} Draw:{{data.odds.draw}} HomeWin: {{data.odds.homeWin}} </br>
-            <br>Result: {{data.result.goalsAwayTeam}} {{"-"}} {{data.result.goalsHomeTeam}}</br>
+            </div>
+            <br><span><b><span>Odds:</span></b>awayWin: {{data.odds.awayWin}}</span> <span>Draw:{{data.odds.draw}} </span><span>HomeWin: {{data.odds.homeWin}}</span> </br>
+            <br><span><b>Result:</b> {{data.result.goalsAwayTeam}} {{"-"}} {{data.result.goalsHomeTeam}}</span></br>
+
         </div>
 </div>

@@ -149,6 +149,117 @@ option {
   font-size: 15px;
   color: #666; }
 
+.slider {
+  width: 100%;
+  height: 645px;
+  overflow: hidden;
+  position: relative;
+  background: #e6e6e6;
+  border: 0px solid #FFF;
+  margin-top: -16px; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  left: 0; }
+
+.arrow {
+  position: absolute;
+  z-index: 1002;
+  display: block;
+  top: 50%;
+  margin-top: -35px;
+  width: 36px;
+  height: 71px;
+  outline: none;
+  cursor: pointer;
+  background: url(../images/blank.gif) no-repeat; }
+
+.arrow.prev {
+  opacity: 0.2;
+  left: 20px;
+  background-color: black;
+  background-image: url(../images/paddle_prev_999.png);
+  transition: 0.2s linear all; }
+
+.arrow.next {
+  opacity: 0.2;
+  right: 20px;
+  background-color: black;
+  background-image: url(../images/paddle_next_999.png);
+  transition: 0.2s linear all; }
+
+.arrow.prev:hover {
+  opacity: 1;
+  background-image: url(../images/paddle_prev_fff.png); }
+
+.arrow.next:hover {
+  opacity: 1;
+  background-image: url(../images/paddle_next_fff.png); }
+
+/*---------------------------------------------------------
+NAV
+---------------------------------------------------------*/
+.nav {
+  text-align: center;
+  display: block;
+  position: absolute;
+  z-index: 1002;
+  left: 0;
+  bottom: -4px;
+  right: 0;
+  height: 48px; }
+
+.nonDraggableImage {
+  -webkit-user-drag: none; }
+
+.nav .wrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em 0 .8em; }
+
+.nav ul {
+  margin: 0;
+  width: 100%; }
+
+.nav .dot, .nav .dot a {
+  display: inline-block;
+  zoom: 1; }
+
+.dots .dot {
+  position: relative;
+  margin: 0 8px;
+  width: 12px;
+  height: 12px; }
+
+.dots .dot a {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #FFF;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s, border-color 0.25s;
+  -moz-transition: background-color 0.25s, border-color 0.25s;
+  transition: background-color 0.25s, border-color 0.25s; }
+
+.dots .dot a.active {
+  border-color: #FFF;
+  background-color: transparent; }
+
 #competitionPage {
   position: relative;
   margin: 100px auto;
@@ -243,25 +354,40 @@ option {
   background-color: white;
   margin-left: 0px;
   margin-right: 0px;
+  border-radius: 10px;
   margin-top: -21px;
-  text-align: center;
-  /*background-image: url("http://cdn.wallpapersafari.com/32/60/YltRok.jpg");*/
-  background-attachment: fixed; }
+  text-align: center; }
+
+.fixtureTeam {
+  font-size: 20px; }
+
+.fixturePage span {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.fixture:first-child {
+  background: white;
+  margin-top: 70px; }
 
 .fixture:nth-child(even) {
-  background: #FFFAF0; }
+  background: white; }
 
 .fixture:nth-child(odd) {
-  background: #F0F8FF; }
+  background: white; }
 
 .fixture {
   color: black;
+  display: inline;
   margin: 0px auto;
-  width: 70%; }
+  width: 70%;
+  border-radius: 10px; }
 
 .fixturedate {
-  background-color: green;
+  background-color: #59b300;
   color: white;
+  margin: 0px auto;
+  width: 70%;
   margin-top: 20px; }
 
 div.ground {
