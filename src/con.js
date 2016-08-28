@@ -1,44 +1,11 @@
 var app = angular.module('app',['ngRoute','ngAnimate','ngTouch']);
 
-// app.config(function($routeProvider){
-// 	$routeProvider.
-// 		when('/',{
-// 			templateUrl: 'html/home.html',
-// 			controller:  'homeCtrl'
-
-// 			}).
-// 		when('/competition',{
-// 			templateUrl: 'html/competition.html',
-// 			controller:  'competitionCtrl'
-// 			}).
-// 		when('/fixtures',{
-// 			templateUrl: 'html/fixture.html',
-// 			controller:  'fixtureCtrl'
-// 			}).
-// 		// when('/teams',{
-// 		// 	templateUrl: 'html/teams.html',
-// 		// 	controller:  'teamCtrl'
-// 		// 	}).
-// 		when('/teams/:key/:teamkey/players',{
-// 			templateUrl: 'html/teamPlayers.html',
-// 			controller:  'teamPlayerCtrl'
-// 			}).
-// 		when('/:id/Competeams',{
-// 			templateUrl: 'html/competitionTeam.html',
-// 			controller:  'competitionTeamCtrl'
-// 			}).
-// 		otherwise({
-// 			redirectTo:'/'
-// 		});
-
-// }); 
-
 app.controller('homeCtrl', function($scope){
         $scope.slides = [
             {image: 'images/img00.jpg', description: 'Image 00'},
             {image: 'images/img01.jpg', description: 'Image 01'},
-            {image: 'images/img02.jpg', description: 'Image 02'}
-            // {image: 'img03.jpg', description: 'Image 03'},
+            {image: 'images/img02.jpg', description: 'Image 02'},
+            {image: 'images/img03.jpg', description: 'Image 03'}
             // {image: 'img04.jpg', description: 'Image 04'}
         ];
 
@@ -104,14 +71,8 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 	teamFactory.data(url,function(data, status){
 		$scope.posts = data.players;
 		console.log(data);
-		// if($scope.teamName == "Barcelona" || $scope.teamName == "Chelsea FC")
-		// {
-		// 	$scope.barca = false;
-		// }
-		// else{
-		// 	$scope.barca = true;
-		// }
-		// for defence
+		
+
 		if (key==="84" || key==="70" || key==="64" || key==="86" || key==="72" || key==="65") {
 			$scope.defence2 = true;
 			$scope.defence1 = false;

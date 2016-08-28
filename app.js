@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var config = require('./config.json');
-var http = require('http')
+// var http = require('http')
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
@@ -13,16 +13,16 @@ app.get('/', function(req, res) {
 		
 });
 
-app.get('/fixtures', function(req, res){
-	console.log('headers are', req.headers);
-	var token = req.headers['X-Auth-Token'];
-	console.log('token');
-	console.log('hittt');
-	//function to get the data from http://api.football-data.org/v1/fixtures
-	// res.on('data', function (chunk) {
- //    console.log('BODY: ' + chunk);
- //  });
-});
+// app.get('/fixtures', function(req, res){
+// 	console.log('headers are', req.headers);
+// 	var token = req.headers['X-Auth-Token'];
+// 	console.log('token');
+// 	console.log('hittt');
+// 	//function to get the data from http://api.football-data.org/v1/fixtures
+// 	// res.on('data', function (chunk) {
+//  //    console.log('BODY: ' + chunk);
+//  //  });
+// });
 // var extServerOptions = {
 //     url: 'http://api.football-data.org/v1/fixtures',
 //     path: '/fixture',

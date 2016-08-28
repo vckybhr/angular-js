@@ -183,7 +183,7 @@ option {
   font-size: 25px;
   font-weight: normal;
   padding: 20px;
-  margin: -20px -20px 50px -20px;
+  margin: -20px -20px 35px -20px;
   background-color: #59b300;
   font-style: italic;
   color: white; }
@@ -240,7 +240,7 @@ option {
   color: #333; }
 
 .fixturePage {
-  background-color: grey;
+  background-color: white;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: -21px;
@@ -249,7 +249,7 @@ option {
   background-attachment: fixed; }
 
 .fixture:nth-child(even) {
-  background: #D0D0D0; }
+  background: #FFFAF0; }
 
 .fixture:nth-child(odd) {
   background: #F0F8FF; }
