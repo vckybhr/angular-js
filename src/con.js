@@ -72,7 +72,8 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 		$scope.posts = data.players;
 		console.log(data);
 		
-
+		var position = function(){
+			console.log("position");
 		if (key==="84" || key==="70" || key==="64" || key==="86" || key==="72" || key==="65") {
 			$scope.defence2 = true;
 			$scope.defence1 = false;
@@ -149,8 +150,10 @@ app.controller('teamPlayerCtrl',['$scope','$http','$routeParams','teamFactory', 
 			$scope.attack_fourteen = true;
 			$scope.attack_fifteen= true;
 		}
-
+	}
+	position();
 	});
+
 	
 }]);
 
