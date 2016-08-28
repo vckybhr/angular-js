@@ -55,6 +55,18 @@ ul.headerLinks li a {
   padding: 20px 30px;
   border-right: 1px solid #3D3D3D;
 }
+ul.headerLinks li:first-child a {
+  border-right: none;
+  background-color: transparent;
+  padding: 0px 0px;
+
+}
+ul.headerLinks li:first-child:hover a {
+  border-right: none;
+  background-color: transparent;
+  padding: 0px 0px;
+
+}
 ul.headerLinks li:last-child a {
   border-right: none;
 }
