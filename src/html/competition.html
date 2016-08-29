@@ -1,16 +1,17 @@
 <div ng-repeat= 'data in posts'>
-  <div id="competitionPage" >
-    <div class="competition">
-        <h3 class="caption">{{data.caption}} </h3>
-        <a href= "#/{{data.id}}/Competeams" ><h1>Teams</h1></a>         
-        <ul>
-            <li> Current Match Day:<b>{{data.currentMatchday}}</b></li>
-            <li> No. of Teams:<b>{{ data.numberOfTeams}}</b></li>
-            <li> No. of Games:<b>{{ data.numberOfGames}}</b></li>
-            <li> Last Updated:<b>{{ data.lastUpdated |date:'hh:mm a, MMMM dd yyyy (EEEE)' }}</b></li>     
-        </ul> 
-    </div> 
-</div>
+ <div id="competitionPage" >
+  <div class="competition">
+   <h3 class="caption">{{data.caption}} </h3>
+    <a href= "#/{{data.id}}/Competeams" ><h1>Teams</h1></a>         
+     <ul>
+       <li> Current Match Day:<b>{{data.currentMatchday}}</b></li>
+        <li> No. of Teams:<b>{{ data.numberOfTeams}}</b></li>
+         <li> No. of Games:<b>{{ data.numberOfGames}}</b></li>
+          <li> Last Updated:<b>{{ data.lastUpdated |date:'hh:mm a, MMMM dd yyyy (EEEE)' }}</b>
+          </li>     
+     </ul> 
+  </div> 
+ </div>
 </div>
  
 
