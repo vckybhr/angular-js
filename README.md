@@ -6,7 +6,7 @@ This project is about showing football leagues, teams and fixtures.
 <h1>Tech</h1>
 
 <li>Express v4.14.0 (Stable) - fast node.js network app framework</li>
-<li>AngularJS v1 - HTML enhanced for User Interfaces</li>li>
+<li>AngularJS v1 - HTML enhanced for User Interfaces</li>
 <li>Node.js v4.5.0 (Latest) - evented I/O for the backend</li>
 
 <h1>Setting up the environment</h1>
