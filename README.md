@@ -5,27 +5,25 @@ This project is about showing football leagues, teams and fixtures.
 
 <h1>Tech</h1>
 ```
-<li>Express v4.14.0 (Stable) - fast node.js network app framework</li>
-<li>AngularJS v1 - HTML enhanced for User Interfaces</li>
-<li>Node.js v4.5.0 (Latest) - evented I/O for the backend</li>
+Express v4.14.0 (Stable) - fast node.js network app framework
+AngularJS v1 - HTML enhanced for User Interfaces
+Node.js v4.5.0 (Latest) - evented I/O for the backend
 ```
 <h1>Setting up the environment</h1>
 
 <h2>Setting up NPM</h2>
 
-<ul>
-<li>For Linux</li>
+For Linux
 ```
   sudo apt-get install npm <br>
   sudp apt-get install node <br>
   sudo apt-get install nodejs-legacy <br>
 ```
-<li>For Mac</li>
+For Mac
 ```
    brew install npm
    brew install node
   ```
-</ul>
 
 <h2>Cloning the repository</h2>
 
@@ -34,9 +32,10 @@ You need git to clone this repository. You can get git from http://git-scm.com/.
 <h2>Clone gitdash</h2>
 
 Clone the gitdash repository using [git]:
-
+```
 	git clone https://github.com/vckybhr/angular-js.git
 	cd gitdash
+```
 <h2>Install Dependencies</h2>
 
 We get the tools we depend upon via npm, the [node package manager][npm].
