@@ -1,0 +1,9 @@
+<h1>Competition Teams</h1>
+  <div class="competitionTeamPage" ng-repeat='data in posts'>
+  <div class="competitionTeam">
+    <img src="{{data.crestUrl}}" height="150" width="150">
+  </div>
+  <h2>Team Name: {{data.name}}</h2>
+  <br>Team Code:{{data.code}}</br>
+  <br ng-show='flag'>MarketValue : <b>{{ data.squadMarketValue | filter:currency }}</b></br>
+</div>

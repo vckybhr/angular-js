@@ -13,6 +13,7 @@ This project is about showing football leagues, teams and fixtures.
 
 <h2>Setting up NPM</h2>
 
+<ul>
 <li>For Linux</li>
 
   sudo apt-get install npm
@@ -23,6 +24,7 @@ This project is about showing football leagues, teams and fixtures.
 
    brew install npm
    brew install node
+</ul>
 
 <h2>Cloning the repository</h2>
 

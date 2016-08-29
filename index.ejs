@@ -1,0 +1,55 @@
+<html lang="en" ng-app = 'app'>
+<head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+  <script type="text/javascript" src="con.js"></script>
+  <script type="text/javascript" src="Factory/factory.js"></script>
+  <script type="text/javascript" src="Service/service.js"></script>
+  <script type="text/javascript" src="constant/constant.js"></script>
+  <script type="text/javascript" src="constant/constant.js"></script>
+  <script type="text/javascript" src="config/config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <ul class="headerLinks">
+        <li>
+          <a href="#/"><img src="images/logo.png"/></a>
+        </li>
+        <li>
+          <a href="#/">Home</a>
+        </li>
+        <li>
+          <a href="#/competition"> Competitions </a>
+        </li>
+        <li>
+          <a href="#/fixtures"> Fixtures </a>
+        </li>
+        <li>
+          <div class="dropdown" ng-controller='teamCtrl'>
+            <div class="dropdown">
+              <a class="dropbtn" > Teams </a>
+              <div class="dropdown-content" >
+                <select onchange="location = this.value;" size=15  >
+                  <option ng-repeat="team in data" value="#/teams/{{team.key}}/{{team.name}}/players">
+                    {{team.name}}
+                  </option>
+                </select>
+              </div>
+            </div>
+          <div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div ng-view></div>
+</body>
+  <script type="text/javascript">
+    var x = "<%= token %>"
+  </script>
+</html>

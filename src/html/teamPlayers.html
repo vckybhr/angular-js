@@ -1,0 +1,131 @@
+<h1> {{teamName}} </h1>
+
+
+</style>
+<div class="ground">
+  <div class="goal1">
+    ____Goal2
+  </div>
+  <div class="middleLine">
+  </div>
+
+  <div class="goal2">
+    <div class="player goalkeeper">
+      <div class="goalkeeperText">Goalkeeper 
+      </div>
+     </div>
+      ____Goal1
+   </div>
+  <div class="player position1" ng-show='defence1'>
+    <div class="innerText">
+      Player 1
+    </div>  
+  </div>
+  <div class="player position2" ng-show='defence1'>
+     <div class="innerText">
+       Player 2
+     </div>
+  </div>
+  <div class="player position3" >
+     <div class="innerText">
+       Player 3                       <!--  always show -->
+     </div>
+  </div>
+  <div class="player position4">
+    <div class="innerText">
+      Player 4                        <!-- always show -->
+    </div>
+  </div>
+  <div class="player position5" >
+    <div class="innerText">
+      Player 5                        <!--  always show  -->
+    </div>                           
+  </div>
+  <div class="player position6" ng-show="mid_six">
+    <div class="innerText">
+      Player 6
+    </div>
+  </div>
+  <div class="player position7" >
+    <div class="innerText">
+      Player 7                        <!--  always show -->
+    </div>
+  </div>
+  <div class="player position8" ng-show="attack_eight">
+    <div class="innerText">
+      Player 8
+    </div>
+  </div>
+  <div class="player position9" ng-show="attack_nine">
+    <div class="innerText">
+      Player 9
+    </div>
+  </div>
+  <div class="player position10" ng-show="attack_ten">
+    <div class="innerText">
+      Player 10
+    </div>
+  </div>
+  <div class="player position11" ng-show="defence2">
+    <div class="innerText">
+      Player 11
+    </div>
+  </div>
+  <div class="player position12" ng-show="mid_twelve">
+    <div class="innerText">
+      Player 12
+    </div>
+  </div>
+  <div class="player position13" ng-show="mid_thirteen">
+    <div class="innerText">
+      Player 13
+    </div>
+  </div>
+  <div class="player position14" ng-show="attack_fourteen">
+    <div class="innerText">
+      Player 14
+    </div>
+  </div>
+  <div class="player position15" ng-show="attack_fifteen">
+    <div class="innerText">
+      Player 15
+    </div>
+  </div> 
+    <div class="player position16" ng-show="mid_sixteen">
+    <div class="innerText">
+      Player 16
+    </div>
+  </div>
+  <div class="player position17" ng-show="mid_seventeen">
+    <div class="innerText">
+      Player 17
+    </div>
+  </div> 
+    <div class="player position18" ng-show="mid_eighteen">
+    <div class="innerText">
+      Player 18
+    </div>
+  </div>
+  <div class="player position19" ng-show="mid_nineteen">
+    <div class="innerText">
+      Player 19
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="teamPlayerPage" ng-repeat="data in posts">
+    <div class="teamPlayer">
+      <h2>{{data.name}}</h2>
+      <h4>{{data.position}}</h4>
+        <p><br>Nationality:<b>{{data.nationality}}</b></br></p>
+          <p>Date of Birth:<b>{{data.dateOfBirth}}</b></p> 
+          <p>Contract Until:<b>{{data.contractUntil}}</b></p>
+          <p>Jersey No.:<b>{{data.jerseyNumber}}</b></p>
+
+    </div>
+  </div>
+
+
+
