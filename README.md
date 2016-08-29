@@ -16,9 +16,9 @@ This project is about showing football leagues, teams and fixtures.
 <ul>
 <li>For Linux</li>
 
-  sudo apt-get install npm
-  sudp apt-get install node
-  sudo apt-get install nodejs-legacy
+  sudo apt-get install npm <br>
+  sudp apt-get install node <br>
+  sudo apt-get install nodejs-legacy <br>
 
 <li>For Mac</li>
 
