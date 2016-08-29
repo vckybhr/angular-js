@@ -1,6 +1,8 @@
+
 /build/
 /benchpress-build/
 .DS_Store
+/*.DS_Store
 gen_docs.disable
 test.disable
 regression/temp*.html
@@ -23,3 +25,4 @@ npm-debug.log
 .vscode
 *.log
 *.stackdump
+config.json

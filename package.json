@@ -5,9 +5,22 @@
   "main": "app.js",
   "private": true,
   "dependencies": {
-    "express": "^4.14.0"
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "gulp-sass": "^2.3.2"
   },
   "author": "",
   "license": "ISC",
-  "scripts": {}
+  "scripts": { },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vckybhr/angular-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vckybhr/angular-js/issues"
+  },
+  "homepage": "https://github.com/vckybhr/angular-js#readme"
 }
