@@ -15,9 +15,9 @@ Node.js v4.5.0 (Latest) - evented I/O for the backend
 
 For Linux
 ```
-  sudo apt-get install npm <br>
-  sudp apt-get install node <br>
-  sudo apt-get install nodejs-legacy <br>
+  sudo apt-get install npm
+  sudp apt-get install node
+  sudo apt-get install nodejs-legacy
 ```
 For Mac
 ```
